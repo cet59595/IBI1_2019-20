@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 #1024 
+#In order to get the answer,we should test step by step in order to get the consequence.
+#So we can creat a method to let us test every step.
 n=2019
 b=0
 c=str(n)+'='
