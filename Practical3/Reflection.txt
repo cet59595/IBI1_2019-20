@@ -1,17 +1,2 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-It is an very interesting practical and I have learned a lot of things.
-So if there is an convenient way to copy something into the GitKraken? It is inconvenient to type the words one by one. Thanks.
-=======
 It is an very interesting practical and I have learned a lot of things during it.
 So do we have any convenient way to copy information into GitKraken? It is so inefficient to just type words one by one.
->>>>>>> Stashed changes
-=======
-It is an very interesting practical and I have learned a lot of things during it.
-So do we have any convenient way to copy information into GitKraken? It is so inefficient to just type words one by one.
->>>>>>> Stashed changes
-=======
-It is an very interesting practical and I have learned a lot of things during it.
-So do we have any convenient way to copy information into GitKraken? It is so inefficient to just type words one by one.
->>>>>>> Stashed changes

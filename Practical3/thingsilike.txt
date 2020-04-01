@@ -5,12 +5,17 @@ studying I like
 you I like 
 listening story I like 
 writing I like 
+<<<<<<<
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 reading  I like
+=======
+reading  I like 
+>>>>>>>
 Chinese I like 
+<<<<<<<
 English
 
 =======
@@ -24,7 +29,11 @@ Englishfsdsdf
 reading  I like 
 Chinese I like 
 English
+=======
+English
+>>>>>>>
 
+<<<<<<<
 
 >>>>>>> Stashed changes
 =======
@@ -41,3 +50,8 @@ English
 
 
 >>>>>>> Stashed changes
+
+=======
+
+
+>>>>>>>
