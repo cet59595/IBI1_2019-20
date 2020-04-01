@@ -6,6 +6,7 @@ you I like
 listening story I like 
 writing I like 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 reading  I like
 Chinese I like 
@@ -18,6 +19,13 @@ Englishfsdsdf
 1sdfsdfds
 2
 >>>>>>> master
+=======
+reading  I like 
+Chinese I like 
+English
+
+
+>>>>>>> Stashed changes
 =======
 reading  I like 
 Chinese I like 
