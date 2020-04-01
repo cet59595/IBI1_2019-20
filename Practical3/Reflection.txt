@@ -1,2 +1,6 @@
+<<<<<<< Updated upstream
 It is an very interesting practical and I have learned a lot of things during it.
+=======
+It is an very interesting practical and I have learned a lot of things during it.
+>>>>>>> Stashed changes
 So do we have any convenient way to copy information into GitKraken? It is so inefficient to just type words one by one.
