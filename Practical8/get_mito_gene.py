@@ -1,37 +1,37 @@
-
+import re
 Name=[]
 gene=[]
+L=[]
 a=''
 b=0
 c=0
 count=0
 i=0
+X=''
 xfile = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa.tar','r')
 for line in xfile:
     if line.startswith('>'):
         if a!='':
             gene.append(a)
-        a=line[1:8]
+        a=line[1:6]
+        X=line
+        L.append(X)
         Name.append(a)
         b=b+1
         a=''
     else:
         a=a+line
 gene.append(a)
-X=input('please input the gene name here')
-Y=input('please in put the gene length here')
+fout=open('mito_gene.fa','w')
 for i in range (b):
-    if X == Name[i] and Y == str(len(gene[i])):
-        print(gene[i])
+    if re.search('Mito',L[i]):        
+        line1 = Name[i]+'   '+str(len(gene[i]))+'\n'
+        line2 = gene[i]+'\n'
+        fout.write(line1)
+        fout.write(line2) 
         c=1
-        break
 if c == 0:
     print('No such sequence here')
-fout=open('mito_gene.fa','w')
-line1 = Name[i]+'\n'
-line2 = gene[i]
-fout.write(line1)
-fout.write(line2)
 fout.close
 try:
     xfile=open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa.tar','r')
