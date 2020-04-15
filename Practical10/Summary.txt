@@ -1,0 +1,5 @@
+From the practical, we can find that the similiarity of consequence of amino acid between human and mouse is very high, compared with the random sequence.
+The similiarity of the amino acid between human and mouse is about 89.64%.
+The similiarity between human amino acid sequence and random amino acid sequence is about 5.41%
+The similiarity between mouse amino acid sequence and random amino acid sequence is about 5.86%
+Therefore, we can see that though mouse does not look like human, they  are close related.
