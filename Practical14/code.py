@@ -56,7 +56,7 @@ for i in ids:
         inc = 0
         for k in n:
             for j in al:
-                if k in al[j]:
+                if k in al[j]:#Check each part and 'is_a' and add them up
                     count += 1
                     inc += 1
                     m.append (j)
