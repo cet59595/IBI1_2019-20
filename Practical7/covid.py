@@ -24,25 +24,28 @@ my_columns = [True, True, False, True, False, False]
 k=covid_data.iloc[0:3,my_columns]
 l=covid_data.loc[2:4,"date"]
 m=covid_data.loc[0:81,"total_cases"]
-#The above is tasks that had been given answers.
+#The above is tasks that had been given answers and the code is just to test the given code
 
 
-
+#Print all the data that had given
 A=covid_data.iloc[0:15:3,:]
 print(A)
 print('\n')
 
 #part5
+#Collect all the data with location'Afghanistan'
 while covid_data.iloc[X,1] == 'Afghanistan':
     print(covid_data.iloc[X,:])  
     X=X+1
 Z=0
 L=len(pd.DataFrame(covid_data))
 for Y in range(0,L):
-    if covid_data.iloc[Y,1] == 'World':
+    if covid_data.iloc[Y,1] == 'World':#Collect all the data with location'Afghanistan'
         world_new_cases.append(covid_data.iloc[Y,2])
         world_dates.append(covid_data.iloc[Y,0])
         world_death_cases.append(covid_data.iloc[Y,3])
+
+#Print True if the location is 'Afghanistan'
 q=[0 for Y in range(L)]
 for Y in range(L):
     if covid_data.iloc[Y,1] == 'Afghanistan':
@@ -50,7 +53,7 @@ for Y in range(L):
     else:
         q[Y] = False
 print(q)
-
+#Drow the image'The curve of world's new cases of COVID-19'
 plt.plot(world_dates,world_new_cases,'b+')
 print('The mean value of world_new_cases is    ',np.mean(world_new_cases,0))
 print('The median value of world_new_cases is    ',np.median(world_new_cases,0))
@@ -60,6 +63,7 @@ plt.xlabel('Time')
 plt.ylabel('cases')
 plt.show()
 #part 6
+#Draw the curve'The boxplot of world's new cases of COVID-19'
 plt.boxplot(world_new_cases,
             vert = True,
             whis=1.5,
@@ -72,7 +76,10 @@ plt.boxplot(world_new_cases,
             )
 plt.title("The boxplot of world's new cases of COVID-19")
 plt.show()
+
+
 #Other tasks ordered in practical
+#Draw the image'The curve of world's death cases of COVID-19'
 plt.plot(world_dates,world_death_cases,'b+')
 print('The mean value of world_death_cases is    ',np.mean(world_death_cases,0))
 print('The median value of world_death_cases is    ',np.median(world_death_cases,0))
@@ -81,7 +88,9 @@ plt.title("The curve of world's death cases of COVID-19")
 plt.xlabel('Time')
 plt.ylabel('cases')
 plt.show()
+
 #part 6
+#Draw the image 'The boxplot of world's death cases of COVID-19'
 plt.boxplot(world_death_cases,
             vert = True,
             whis=1.5,
@@ -95,6 +104,7 @@ plt.boxplot(world_death_cases,
 plt.title("The boxplot of world's death cases of COVID-19")
 plt.show()
 
+#Draw the curve'The curve of China's new cases o COVID-19'
 China_dates = []
 China_new_cases = []
 China_total_cases = []
@@ -105,10 +115,11 @@ for s in range(L):
         China_total_cases.append(covid_data.iloc[s,4])
 plt.plot(China_dates,China_new_cases,'b+')
 plt.xticks(China_dates[0:len(China_dates):4],rotation=-90)
-plt.title("The curve of China's new cases of COVID-19")
+plt.title("The curve of China's new cases o COVID-19")
 plt.xlabel('Time')
 plt.ylabel('cases')
 plt.show()
+#Draw the curve'The curve of China's title cases of COVID-19'
 plt.plot(China_dates,China_total_cases,'b+')
 plt.xticks(China_dates[0:len(China_dates):4],rotation=-90)
 plt.title("The curve of China's title cases of COVID-19")

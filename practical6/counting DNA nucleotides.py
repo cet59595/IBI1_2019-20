@@ -1,18 +1,37 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Mar 18 09:02:37 2020
 
-@author: english
-"""
+#reset the variables
+A = 0
+C = 0
+G = 0
+T = 0
+s = input('Please input a DNA sequence')
+# input s
+n = len (s)
+# for i = 0 to n-1
+# count(A,C,G,T)
+for i in range (0,n):
+    c = s[i-1]
+    if c == 'A':
+        A = A + 1
+    elif c == 'C':
+        C = C + 1
+    elif c == 'G':
+        G = G + 1
+    elif c == 'T':
+        T = T + 1
+    else:
+        print('It is not a DNA sequence')#Check whether the sequence input is a DNA sequence
+
+
+#The following is the code to draw the image
 import matplotlib.pyplot as plt
-a="ATGCTTCAGAAAGGTCTTACG"#we can also change it into a=input()
-b=a.count('A')
-c=a.count('T')
-d=a.count('G')
-e=a.count('C')#it is a method to count evert letter in the DNA
-f=['A','T','G','C']
-sizes=[b,c,d,e]
-explode=[0,0,0,0]
-plt.pie(sizes,explode=explode,labels=f,autopct='%1.1f%%',shadow=False,startangle=150)
-plt.title("pie of the four DNA nucleotides")
+# set parameters
+labels = ['A' , 'G' , 'C' , 'T']
+sizes = [A , G , C , T]
+explode = (0 , 0 , 0 , 0) 
+colors = ['red', 'yellow', 'blue', 'green',]
+plt.pie(sizes,explode=explode,labels=labels,autopct='%1.1f%%',shadow=False,startangle=90,colors=colors)
+plt.axis('equal')
+plt.title('Counting	DNA	nucleotides')
+print (' A = ', A,' , G = ',G, ' , C = ',C,' , T = ', T) 
 plt.show()

@@ -1,5 +1,5 @@
 Question name: How have new cases and total cases developed over time in China?
-Line number:98-119
+Line number:107-130
 Result discussion: At the begining, the number of people suffered from the disease increase rapidly 
 but after a while the number of patients start to grow slowlier and finally almost keep invariability.
 From the result we can see that though Chinese suffered a lot from disease, we  have controled the

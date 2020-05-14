@@ -1,37 +1,27 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Mar 18 09:35:23 2020
-
-@author: english
-"""
-import matplotlib.pyplot as plt
-gene_lengths=[9410,3944141,4442,105338,19149,76779,126550,36296,842,15981]
-#it can also change into: for i in range(0,10):
-#gene_lengths[i]=int(input())
-b=0
-c=0
-for a in range (0,10):  
-    if gene_lengths[a]>gene_lengths[b]:
-        b=a
-    if gene_lengths[c]>gene_lengths[a]:
-        c=a
-max=gene_lengths[c]
-min=gene_lengths[b]
-if c>b:   #it is used to make sure that we delete the number at the back
-    gene_lengths.remove(max)
-    gene_lengths.remove(min)
+gene_lengths = [0 for i in range(10)]
+# input gene_lengths
+for i in range(0,10):
+    gene_lengths[i] = int(input('please a gene lengths for ten times'))
+min = 0
+max = 0
+# Compare the lengths by running the loop ten times
+for i in range (1,10):
+    if gene_lengths[min] > gene_lengths[i]:
+        min = i#Get the smaller gene length
+    if gene_lengths[max] < gene_lengths[i]:
+        max = i#Get the larger gene length
+# Remove the latter one first otherwise some errors may occur
+if min>max:
+    gene_lengths.remove(gene_lengths[min])
+    gene_lengths.remove(gene_lengths[max])
 else:
-    gene_lengths.remove(max)
-    gene_lengths.remove(min)
-    
-plt.boxplot(gene_lengths,
-            vert=True,
-            whis=1.5,
-            patch_artist=True,
-            meanline=False,
-            showbox=True,
-            showcaps=True,
-            showfliers=True,#I can not understand how the showflier works
-            notch=False,
-            )
+    gene_lengths.remove(gene_lengths[max])
+    gene_lengths.remove(gene_lengths[min])
+print (gene_lengths)
+
+#The following is the code to draw the image
+import matplotlib.pyplot as plt
+plt.boxplot(gene_lengths,vert=True,whis=1.5,
+            patch_artist=True,meanline=True,showbox=True,
+            showcaps=True,showfliers=True,notch=False)
 plt.show()
