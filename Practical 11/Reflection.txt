@@ -1,0 +1,4 @@
+The code is very complex and took me lots of time to finish it.
+I discussed with my classmates and cooperated in order to solve but we still spent nearly six hours  getting it. 
+We used method of exhaustion to get the consequence so the the algorithm is really complicated.
+I guess more effective algorithm would exist which could be explored in my future learning.
