@@ -1,0 +1,8 @@
+At first we picked one number to calculate with another, which should be six possible ways.
+Than each number we got would repeat the above process with another number.
+The complexity of the script is nearly (n!)^2.
+For a sequence with n digits, there are 6*n*(n-1)/2     (n-1)-digit sequence. 
+Therefore, the times it operated is  [6^(n-1)] * n*[(n-1)^2]*[(n-2)^2]*……*1/[2^(n-1)]
+From this we can know that  the  total times it operated is [3^(n-1)]*[(n!)^2]/n.
+So, we can estimate that O(n) = (n!)^2
+It took a lot of time to calculate which is complicated and not effective.

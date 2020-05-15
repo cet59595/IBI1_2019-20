@@ -1,0 +1,9 @@
+Due to the affect of COVID-19 I spent most of my time studying at home.
+Therefore, the internet as well as slides are the only way for me to learn Python.
+It is challenge but also interesting, because I could learn a lot from the process when I trying to solve some problems.
+Though each practical would take me about 4 hours to finish completely, in each moment I would always get some new ideas which deepen my understanding of python.
+However, maybe because I was not so familiar with the lecture I had to review slides when I meet some difficulitis.
+In the first two practicals we start to deal with some easy problems, not contain very complex logical calculation.
+However, the latest practicals are much more complated which should I make a lot of drafts in advance.
+From this semester I can see my progress in IBI learning and get to know a large variety of knowledges.
+I believed that in the future, I would be eager to explore more about the biomedical information to let me enable to enjoy the charm of program.
